@@ -1,7 +1,8 @@
 {
-    "name": "controlla/laravel-inventory",
+    "name": "controlla_ccd/laravel-inventory",
     "description": "Inventory Management for Laravel",
     "keywords": [
+        "controlla_ccd",
         "laravel-inventory"
     ],
     "homepage": "https://github.com/controlla/laravel-inventory",
