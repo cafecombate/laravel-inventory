@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Prepare database
+mysql << EOF
+    CREATE DATABASE IF NOT EXISTS ikki_db;
+    ALTER USER 'root'@'localhost' IDENTIFIED BY 'root';
+    FLUSH PRIVILEGES;
+EOF
+
+# Git config
+git config pull.rebase false
+
+# Xdebug config
+sudo cp .xdebug.example /etc/php/8.1/cli/conf.d/20-xdebug.ini
