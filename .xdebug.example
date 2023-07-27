@@ -1,0 +1,5 @@
+[xdebug]
+zend_extension=xdebug.so
+xdebug.idekey=ECLIPSE
+xdebug.client_port=9003
+xdebug.mode=debug
