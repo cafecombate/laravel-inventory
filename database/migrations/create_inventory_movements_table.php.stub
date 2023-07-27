@@ -1,0 +1,51 @@
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\Schema;
+
+class CreateInventoryMovementsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up()
+    {
+        Schema::create('inventory_movements', function (Blueprint $table) {
+            $table->id();
+    
+            $table->decimal('before', 8, 2)->default(0);
+            $table->decimal('after', 8, 2)->default(0);
+            $table->decimal('cost', 8, 2)->default(0)->nullable();
+            $table->nullableMorphs('receiver');
+            $table->string('reason')->nullable();
+            $table->boolean('returned')->default(0);
+
+            $table->foreignId('user_id')
+            ->nullable()
+            ->onUpdate('restrict')
+            ->onDelete('set null');
+
+            $table->foreignId('warehouse_id')
+            ->onUpdate('restrict')
+            ->onDelete('cascade');
+
+
+            $table->foreignId('stock_id')
+            ->constrained('inventory_stocks')
+            ->onUpdate('restrict')
+            ->onDelete('cascade');
+
+            $table->timestamps();
+            $table->softDeletes();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down()
+    {
+        Schema::dropIfExists('inventory_movements');
+    }
+}

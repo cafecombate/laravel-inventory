@@ -1,0 +1,64 @@
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\Schema;
+
+class CreateInventoryStocksTable extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up()
+    {
+        Schema::create('inventory_stocks', function (Blueprint $table) {
+            $table->id();
+    
+
+            $table->string('inventoriable_type');
+            $table->unsignedBigInteger('inventoriable_id');
+            $table->index(['inventoriable_type', 'inventoriable_id']);
+
+            $table->decimal('quantity', 8, 2)->default(0);
+            $table->text('description')->nullable();
+            $table->string('aisle')->nullable();
+            $table->string('row')->nullable();
+            $table->string('bin')->nullable();
+
+            /*
+             * This allows only one inventory stock
+             * to be created on a single location
+             */
+            $table->unique(['inventoriable_id', 'location_id']);
+
+            $table->foreignId('user_id')
+            ->nullable()
+            ->onUpdate('restrict')
+            ->onDelete('set null');
+
+            $table->foreignId('location_id')
+            ->onUpdate('restrict')
+            ->onDelete('cascade');
+
+            $table->foreignId('warehouse_id')
+            ->nullable()
+            ->onUpdate('restrict')
+            ->onDelete('cascade');
+
+            $table->foreignId('metric_id')
+            ->onUpdate('restrict')
+            ->onDelete('cascade');
+
+            $table->timestamps();
+            $table->softDeletes();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down()
+    {
+        Schema::dropIfExists('inventory_stocks');
+    }
+}

@@ -1,0 +1,35 @@
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\Schema;
+
+class CreateWarehousesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up()
+    {
+        Schema::create('warehouses', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+
+            $table->string('name');
+
+            $table->string('warehouseable_type');
+            $table->unsignedBigInteger('warehouseable_id');
+            $table->index(['warehouseable_type', 'warehouseable_id']);
+
+            $table->unique(['warehouseable_id']);
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down()
+    {
+        Schema::dropIfExists('warehouses');
+    }
+}
