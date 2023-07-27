@@ -1,6 +1,6 @@
 <?php
 
-namespace IvanSotelo\Inventory\Exceptions;
+namespace Controlla\Inventory\Exceptions;
 
 /**
  * Class InvalidPartException.

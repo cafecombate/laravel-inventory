@@ -1,9 +1,9 @@
 <?php
 
-namespace IvanSotelo\Inventory\Traits;
+namespace Controlla\Inventory\Traits;
 
 use Illuminate\Database\Eloquent\Model;
-use IvanSotelo\Inventory\Models\InventoryStock;
+use Controlla\Inventory\Models\InventoryStock;
 
 trait HasInventory
 {

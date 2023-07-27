@@ -1,9 +1,9 @@
 # Inventory Management for Laravel
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/ivansotelo/laravel-inventory.svg?style=flat-square)](https://packagist.org/packages/ivansotelo/laravel-inventory)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/ivansotelo/laravel-inventory/ci?label=tests)](https://github.com/ivansotelo/laravel-inventory/actions?query=workflow%3Aci)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/ivansotelo/laravel-inventory/ci?label=code%20style)](https://github.com/ivansotelo/laravel-inventory/actions?query=workflow%3A"ci")
-[![Total Downloads](https://img.shields.io/packagist/dt/ivansotelo/laravel-inventory.svg?style=flat-square)](https://packagist.org/packages/ivansotelo/laravel-inventory)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/controlla/laravel-inventory.svg?style=flat-square)](https://packagist.org/packages/controlla/laravel-inventory)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/controlla/laravel-inventory/ci?label=tests)](https://github.com/controlla/laavel-inventory/actions?query=workflow%3Aci)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/controlla/laravel-inventory/ci?label=code%20style)](https://github.com/controlla/laravel-inventory/actions?query=workflow%3A"ci")
+[![Total Downloads](https://img.shields.io/packagist/dt/controlla/laravel-inventory.svg?style=flat-square)](https://packagist.org/packages/controlla/laravel-inventory)
 
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
@@ -21,19 +21,19 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 You can install the package via composer:
 
 ```bash
-composer require ivansotelo/laravel-inventory
+composer require controlla/laravel-inventory
 ```
 
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --provider="IvanSotelo\Inventory\InventoryServiceProvider" --tag="laravel-inventory-migrations"
+php artisan vendor:publish --provider="Controlla\Inventory\InventoryServiceProvider" --tag="laravel-inventory-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 ```bash
-php artisan vendor:publish --provider="IvanSotelo\Inventory\InventoryServiceProvider" --tag="laravel-inventory-config"
+php artisan vendor:publish --provider="Controlla\Inventory\InventoryServiceProvider" --tag="laravel-inventory-config"
 ```
 
 This is the contents of the published config file:
@@ -46,11 +46,11 @@ return [
     |--------------------------------------------------------------------------
     /
     / The class of inventory model that holds all inventories. The model
-    / must be or extend `IvanSotelo\Inventory\Inventory::class`
+    / must be or extend `Controlla\Inventory\Inventory::class`
     / for the inventory package to work properly.
     /
     */
-    'inventory_model' => IvanSotelo\Inventory\Inventory::class,
+    'inventory_model' => Controlla\Inventory\Inventory::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -167,7 +167,7 @@ Add the HasInventory to the Model, the trait will enable inventory tracking.
 
 ```php
 ...
-use IvanSotelo\Inventory\HasInventory;
+use Controlla\Inventory\HasInventory;
 
 class Product extends Model
 {
@@ -238,7 +238,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Ivan Sotelo](https://github.com/IvanSotelo)
+- [controlla](https://github.com/Controlla)
 - [All Contributors](../../contributors)
 
 ## License

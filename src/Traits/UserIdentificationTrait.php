@@ -1,10 +1,10 @@
 <?php
 
-namespace IvanSotelo\Inventory\Traits;
+namespace Controlla\Inventory\Traits;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Lang;
-use IvanSotelo\Inventory\Exceptions\NoUserLoggedInException;
+use Controlla\Inventory\Exceptions\NoUserLoggedInException;
 
 /**
  * Trait UserIdentificationTrait.

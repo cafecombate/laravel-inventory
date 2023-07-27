@@ -1,11 +1,11 @@
 <?php
 
-namespace IvanSotelo\Inventory;
+namespace Controlla\Inventory;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \IvanSotelo\Inventory\Inventory
+ * @see \Controlla\Inventory\Inventory
  */
 class InventoryFacade extends Facade
 {

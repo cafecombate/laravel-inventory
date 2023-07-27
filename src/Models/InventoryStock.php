@@ -1,14 +1,14 @@
 <?php
 
-namespace IvanSotelo\Inventory\Models;
+namespace Controlla\Inventory\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use IvanSotelo\Inventory\Traits\InventoryStockTrait;
+use Controlla\Inventory\Traits\InventoryStockTrait;
 
 /**
- * IvanSotelo\Inventory\Models\InventoryStock
+ * Controlla\Inventory\Models\InventoryStock
  *
  * @property Location $location
  */

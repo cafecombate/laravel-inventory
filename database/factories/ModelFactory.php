@@ -1,6 +1,6 @@
 <?php
 
-namespace IvanSotelo\Inventory\Database\Factories;
+namespace Controlla\Inventory\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

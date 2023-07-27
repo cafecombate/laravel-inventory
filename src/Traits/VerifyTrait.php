@@ -1,10 +1,10 @@
 <?php
 
-namespace IvanSotelo\Inventory\Traits;
+namespace Controlla\Inventory\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Lang;
-use IvanSotelo\Inventory\Exceptions\InvalidQuantityException;
+use Controlla\Inventory\Exceptions\InvalidQuantityException;
 
 /**
  * Trait VerifyTrait.

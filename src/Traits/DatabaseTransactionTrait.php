@@ -1,6 +1,6 @@
 <?php
 
-namespace IvanSotelo\Inventory\Traits;
+namespace Controlla\Inventory\Traits;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Event;

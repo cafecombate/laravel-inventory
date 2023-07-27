@@ -1,12 +1,12 @@
 <?php
 
-namespace IvanSotelo\Inventory\Traits;
+namespace Controlla\Inventory\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Lang;
-use IvanSotelo\Inventory\Exceptions\InvalidMovementException;
-use IvanSotelo\Inventory\Exceptions\NotEnoughStockException;
+use Controlla\Inventory\Exceptions\InvalidMovementException;
+use Controlla\Inventory\Exceptions\NotEnoughStockException;
 
 trait InventoryStockTrait
 {

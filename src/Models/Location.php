@@ -1,11 +1,11 @@
 <?php
 
-namespace IvanSotelo\Inventory\Models;
+namespace Controlla\Inventory\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * IvanSotelo\Inventory\Models\InventoryStock
+ * Controlla\Inventory\Models\InventoryStock
  *
  * @property int $warehouse_id
  */

@@ -1,9 +1,9 @@
 <?php
 
-namespace IvanSotelo\Inventory\Tests;
+namespace Controlla\Inventory\Tests;
 
 use Illuminate\Database\Eloquent\Model;
-use IvanSotelo\Inventory\Traits\HasInventory;
+use Controlla\Inventory\Traits\HasInventory;
 
 class InventoryModel extends Model
 {

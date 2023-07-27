@@ -1,8 +1,8 @@
 <?php
 
-namespace IvanSotelo\Inventory\Traits;
+namespace Controlla\Inventory\Traits;
 
-use IvanSotelo\Inventory\Models\Warehouse;
+use Controlla\Inventory\Models\Warehouse;
 
 trait HasWarehouses
 {

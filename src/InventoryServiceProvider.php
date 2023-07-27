@@ -1,8 +1,8 @@
 <?php
 
-namespace IvanSotelo\Inventory;
+namespace Controlla\Inventory;
 
-use IvanSotelo\Inventory\Commands\InventoryCommand;
+use Controlla\Inventory\Commands\InventoryCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace IvanSotelo\Inventory\Traits;
+namespace Controlla\Inventory\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Lang;
-use IvanSotelo\Inventory\Exceptions\SkuAlreadyExistsException;
+use Controlla\Inventory\Exceptions\SkuAlreadyExistsException;
 
 trait HasSku
 {

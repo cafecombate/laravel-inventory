@@ -1,10 +1,10 @@
 <?php
 
-namespace IvanSotelo\Inventory\Traits;
+namespace Controlla\Inventory\Traits;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
-use IvanSotelo\Inventory\Exceptions\InvalidPartException;
+use Controlla\Inventory\Exceptions\InvalidPartException;
 
 trait HasAssembly
 {
@@ -46,7 +46,7 @@ trait HasAssembly
      * @param  int|float|string  $quantity
      * @return $this
      *
-     * @throws \IvanSotelo\Inventory\Exceptions\InvalidQuantityException
+     * @throws \Controlla\Inventory\Exceptions\InvalidQuantityException
      */
     public function addAssemblyItem(Model $part, $quantity = 1, array $extra = [])
     {
@@ -80,7 +80,7 @@ trait HasAssembly
      * @param  int|float|string  $quantity
      * @return int
      *
-     * @throws \IvanSotelo\Inventory\Exceptions\InvalidQuantityException
+     * @throws \Controlla\Inventory\Exceptions\InvalidQuantityException
      */
     public function addAssemblyItems(Collection $parts, $quantity = 1, array $extra = [])
     {
@@ -105,7 +105,7 @@ trait HasAssembly
      * @param  int|float|string  $quantity
      * @return $this|bool
      *
-     * @throws \IvanSotelo\Inventory\Exceptions\InvalidQuantityException
+     * @throws \Controlla\Inventory\Exceptions\InvalidQuantityException
      */
     public function updateAssemblyItem($part, $quantity = 1, array $extra = [])
     {
@@ -137,7 +137,7 @@ trait HasAssembly
      * @param  int|float|string  $quantity
      * @return int
      *
-     * @throws \IvanSotelo\Inventory\Exceptions\InvalidQuantityException
+     * @throws \Controlla\Inventory\Exceptions\InvalidQuantityException
      */
     public function updateAssemblyItems(Collection $parts, $quantity, array $extra = [])
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace IvanSotelo\Inventory\Commands;
+namespace Controlla\Inventory\Commands;
 
 use Illuminate\Console\Command;
 

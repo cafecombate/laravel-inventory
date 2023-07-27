@@ -1,11 +1,11 @@
 <?php
 
-namespace IvanSotelo\Inventory\Tests;
+namespace Controlla\Inventory\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Schema\Blueprint;
-use IvanSotelo\Inventory\InventoryServiceProvider;
-use IvanSotelo\Inventory\Models\InventoryStock;
+use Controlla\Inventory\InventoryServiceProvider;
+use Controlla\Inventory\Models\InventoryStock;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -19,7 +19,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'IvanSotelo\\Inventory\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Controlla\\Inventory\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
 
         $this->setUpDatabase($this->app);
@@ -87,14 +87,14 @@ class TestCase extends Orchestra
         InventoryStock::create([
             'quantity' => 0,
             'description' => 'Inventory description',
-            'inventoriable_type' => 'IvanSotelo\Inventory\Tests\InventoryModel',
+            'inventoriable_type' => 'Controlla\Inventory\Tests\InventoryModel',
             'inventoriable_id' => '1',
         ]);
 
         InventoryStock::create([
             'quantity' => 10,
             'description' => 'Inventory description',
-            'inventoriable_type' => 'IvanSotelo\Inventory\Tests\InventoryModel',
+            'inventoriable_type' => 'Controlla\Inventory\Tests\InventoryModel',
             'inventoriable_id' => '2',
         ]);
     }

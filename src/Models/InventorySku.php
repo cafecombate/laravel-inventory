@@ -1,6 +1,6 @@
 <?php
 
-namespace IvanSotelo\Inventor\Models;
+namespace Controlla\Inventor\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace IvanSotelo\Inventory\Tests;
+namespace Controlla\Inventory\Tests;
 
 class HasInventoryTest extends TestCase
 {
