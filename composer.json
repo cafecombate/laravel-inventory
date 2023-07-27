@@ -1,17 +1,17 @@
 {
-    "name": "ivansotelo/laravel-inventory",
+    "name": "controlla/laravel-inventory",
     "description": "Inventory Management for Laravel",
     "keywords": [
-        "ivansotelo",
+        "controlla",
         "laravel-inventory"
     ],
-    "homepage": "https://github.com/ivansotelo/laravel-inventory",
+    "homepage": "https://bitbucket.org/controlla-mx/laravel-inventory",
     "license": "MIT",
     "authors": [
         {
-            "name": "Ivan Sotelo",
-            "email": "isotelo@controlla.com.mx",
-            "role": "Developer"
+            "name": "Controlla",
+            "email": "devops@controlla.com.mx",
+            "role": "DevOps"
         }
     ],
     "require": {
