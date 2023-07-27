@@ -1,15 +1,15 @@
 {
-    "name": "controlla/laravel-inventory",
+    "name": "controlla_ccd/laravel-inventory",
     "description": "Inventory Management for Laravel",
     "keywords": [
-        "controlla",
+        "controlla_ccd",
         "laravel-inventory"
     ],
     "homepage": "https://bitbucket.org/controlla-mx/laravel-inventory",
     "license": "MIT",
     "authors": [
         {
-            "name": "Controlla",
+            "name": "Controlla_CCD",
             "email": "devops@controlla.com.mx",
             "role": "DevOps"
         }
