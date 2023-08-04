@@ -2,6 +2,7 @@
 
 namespace Controlla\Inventory\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 class InventoryMovement extends Model
@@ -16,12 +17,21 @@ class InventoryMovement extends Model
     protected $fillable = [
         'stock_id',
         'warehouse_id',
+        'character',
         'user_id',
         'before',
         'after',
         'cost',
         'reason',
     ];
+
+    protected static function boot()
+    {
+        parent::boot();
+        static::addGlobalScope('order', function (Builder $builder) {
+            $builder->orderBy('id', 'desc');
+        });
+    }
 
     /**
      * The belongsTo stock relationship.
