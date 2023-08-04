@@ -17,7 +17,7 @@ return [
 
     'InvalidQuantityException' => 'Cantidad :quantity es invalida',
 
-    'NotEnoughStockException' => 'Not enough stock. Tried to take :quantity but only :available is available',
+    'NotEnoughStockException' => 'Stock insuficiente. Se requiere :quantity pero solo existe :available',
 
     'NoUserLoggedInException' => 'No se puede recuperar la ID de usuario',
 
