@@ -19,6 +19,7 @@ class CreateInventoryMovementsTable extends Migration
             $table->decimal('cost', 8, 2)->default(0)->nullable();
             $table->nullableMorphs('receiver');
             $table->string('reason')->nullable();
+            $table->string('character')->nullable();
             $table->boolean('returned')->default(0);
 
             $table->foreignId('user_id')

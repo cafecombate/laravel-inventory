@@ -16,6 +16,7 @@ class InventoryMovement extends Model
     protected $fillable = [
         'stock_id',
         'warehouse_id',
+        'character',
         'user_id',
         'before',
         'after',

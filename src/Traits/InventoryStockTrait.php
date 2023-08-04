@@ -485,10 +485,12 @@ trait InventoryStockTrait
      */
     private function generateStockMovement($before, $after, $reason = '', $cost = 0)
     {
+        $character = $before < $after ? 'Entrada' : 'Salida';
         $insert = [
             'before' => $before,
             'after' => $after,
             'reason' => $reason,
+            'character' => $character,
             'cost' => $cost,
             'warehouse_id' => $this->location->warehouse_id,
         ];
